@@ -1,0 +1,23 @@
+Check/Install python version:
+  python --version
+Check/Install virtualenv:
+  sudo pip3 install virtualenv
+  virtualenv --version
+Create a virtualevn and jump into it:
+  virtualenv <folName>
+  cd <folName>
+Activate that virtualenv:
+  source bin/activate
+Install Flask:
+  pip install Flask
+Setup system variable:
+  export FLASK_APP=<fileName.py>
+Setup debug mode:
+  export FLASK_ENV=development
+Run:
+  flask run
+Install flask_session:
+  pip3 install flask-session
+Install werlzeug:
+  pip uninstall werkzeug
+  pip install werkzeug==0.16.0

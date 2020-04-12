@@ -1,0 +1,209 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <title>Day 2</title>
+    <style>
+      ol + ul {
+        color: blue;
+      }
+      input[type = "number"] {
+        background-color: red;
+        width: 80%;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        background-color: green;
+      }
+
+      button:hover {
+        background-color: orange;
+      }
+      #a::before {
+        content: "\21d2 Click here: ";
+        font-weight:bold;
+      }
+      #b::selection {
+        color: red;
+        background-color: yellow;
+      }
+      @media print {
+        .screen-only {
+          display: none;
+        }
+      }
+      @media (min-width: 700px) {
+        body {
+          background-color: lightgray;
+        }
+        h1::before {
+          content: "Welcome!";
+        }
+      }
+      @media (max-width: 699px) {
+        body {
+          background-color: white;
+        }
+        h1::before {
+          content: "Hello!";
+        }
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: green;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+      }
+      .grid {
+        background-color: green;
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 200px 200px auto 100px;
+      }
+      .grid-item {
+        background-color: white;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href = "https://www.google.com">Click here</a>
+
+    <h2>Table of contents</h2>
+    <ul>
+      <li><a href = "#section1">Section 1</a></li>
+      <li><a href = "#section2">Section 2</a></li>
+      <li><a href = "#section3">Section 3</a></li>
+    </ul>
+    <h2 id = "section1">Section 1</h2>
+    <p>
+      This is section 1<br>
+      This is section 1<br>
+      This is section 1<br>
+      This is section 1<br>
+    </p>
+    <h2 id = "section2">Section 2</h2>
+    <p>
+      This is section 2<br>
+      This is section 2<br>
+      This is section 2<br>
+      This is section 2<br>
+    </p>
+    <h2 id = "section3">Section 3</h2>
+    <p>
+      This is section 3<br>
+      This is section 3<br>
+      This is section 3<br>
+      This is section 3<br>
+    </p>
+
+    <h1>Form</h1>
+    <div>
+      <input name = "name" type = "text" placeholder = "Name">
+      <input name = "password" type = "password" placeholder = "Password">
+    </div>
+
+    <div>
+      Favorite color?
+      <input name = "color" type = "radio" value = "red"> Red
+      <input name = "color" type = "radio" value = "green"> Green
+      <input name = "color" type = "radio" value = "blue"> Blue
+      <input name = "color" type = "radio" value = "other"> Other
+    </div>
+
+    <div>
+      <input name = "number" list = "numbers" placeholder = "Number">
+      <datalist id = "numbers">
+          <option value = "One">
+          <option value = "Two">
+          <option value = "Three">
+          <option value = "Four">
+          <option value = "Five">
+          <option value = "Six">
+          <option value = "Seven">
+          <option value = "Eight">
+          <option value = "Nine">
+          <option value = "Ten">
+      </datalist>
+    </div>
+
+    <h1>Descendant</h1>
+    <ol>
+      <li>This is an item</li>
+      <li>Another item</li>
+      <ul>
+        <li>Sublist item</li>
+        <li>Another sublist item</li>
+      </ul>
+      <li>Third item</li>
+    </ol>
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+
+    <h1>Attributes</h1>
+    <input name = "name" type = "number" placeholder = "number">
+
+    <h1>Hover</h1>
+    <button>Click me</button>
+
+    <h1>Before</h1>
+    <ul>
+      <li><a id = "a" href = "#">one link</a></li>
+      <li><a id = "a" href = "#">another link</a></li>
+      <li><a id = "a" href = "#">third link</a></li>
+    </ul>
+
+    <h1>Selection</h1>
+    <p id = "b">This is a paragraph</p>
+
+    <h1>Print</h1>
+    <p>This isa paragraph</p>
+    <p>This is another paragraph</p>
+    <p class = "screen-only">This is visible</p>
+
+    <h1>Flexbox</h1>
+    <div class = "container">
+      <div>A. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>B. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>C. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>D. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>E. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>F. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>G. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>H. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>I. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>K. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>L. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+      <div>M. Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</div>
+    </div
+
+    <h1>Grid</h1>
+    <div class = "grid">
+      <div class = "grid-item">1</div>
+      <div class = "grid-item">2</div>
+      <div class = "grid-item">3</div>
+      <div class = "grid-item">4</div>
+      <div class = "grid-item">5</div>
+      <div class = "grid-item">6</div>
+      <div class = "grid-item">7</div>
+      <div class = "grid-item">8</div>
+      <div class = "grid-item">9</div>
+      <div class = "grid-item">10</div>
+      <div class = "grid-item">11</div>
+      <div class = "grid-item">12</div>
+      <div class = "grid-item">13</div>
+      <div class = "grid-item">14</div>
+      <div class = "grid-item">15</div>
+    </div>
+  </body>
+</html>

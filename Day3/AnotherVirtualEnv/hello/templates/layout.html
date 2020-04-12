@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My web page</title>
+  </head>
+  <body>
+    <h1>{% block heading %}{% endblock %}</h1>
+    <p>
+      {% block body %}
+      {% endblock %}
+    </p>
+    {% block list %}
+    {% endblock %}
+    {% block url %}
+    {% endblock %}
+  </body>
+</html>
